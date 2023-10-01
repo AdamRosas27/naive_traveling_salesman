@@ -14,6 +14,10 @@ class Main:
 
         # Initialize some variables that will be used to hold the best route and all possible routes using permutations from the itertools library
 
+        shortest_route = None
+        cities = len(adj_matrix)
+        all_routes = permutations(range(cities))
+
         # Add my 2D matrix that will represent my graph and the elements within will represent the distance between each city
 
         adj_matrix = [
