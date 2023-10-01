@@ -7,7 +7,16 @@ class Main:
 
 # Create a helper function that will receive the possible routes from the routes method and execute the traveling salesman algorithm
     def tsp(self):
-        pass
+
+        # Add my 2D matrix that will represent my graph and the elements within will represent the distance between each city
+        adj_matrix = [
+            [0, 0, 3, 0, 2, 10],
+            [0, 0, 0, 0, 15, 1],
+            [3, 0, 0, 7, 6, 0],
+            [0, 0, 7, 0, 2, 0],
+            [2, 15, 6, 2, 0, 4],
+            [10, 1, 0, 0, 4, 0],
+        ]
 
 # Create a main function that will run the program
     def main(self):
