@@ -6,7 +6,7 @@ from itertools import permutations
 class Main:
 
     # Create function that will determine each possible route and holds some key logic for determining the shortest route
-    def routes(self):
+    def distance(self):
         pass
 
 # Create a helper function that will receive the possible routes from the routes method and execute the traveling salesman algorithm
