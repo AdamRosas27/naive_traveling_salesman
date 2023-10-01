@@ -6,8 +6,18 @@ from itertools import permutations
 class Main:
 
     # Create function that will determine each possible route and holds some key logic for determining the shortest route
-    def distance(self):
-        pass
+
+    # Should take in the adj_matrix and the route as parameters
+    def distance(route, adj_matrix):
+        # Initialize a variable that will hold the total distance of the route
+        total_distance = 0
+
+        # Create a for loop that will iterate through the route and add the distance between each city to the total distance
+        for i in range(len(route) - 1):
+            total_distance += adj_matrix[route[i]][route[i + 1]]
+        # Return to the starting city
+        total_distance += adj_matrix[route[-1]][route[0]]
+        return total_distance
 
 # Create a helper function that will receive the possible routes from the routes method and execute the traveling salesman algorithm
     def tsp(self):
